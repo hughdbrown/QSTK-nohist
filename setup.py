@@ -22,6 +22,7 @@ setup(
         'pytz==2012h',
         'pandas==0.9.0',
         'matplotlib==1.1.1',
+        'epydoc==3.0.1',
     ],
     tests_require=[
         'nose==1.2.1',

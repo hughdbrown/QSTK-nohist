@@ -21,6 +21,13 @@ namespace "setup" do
   task :test do
     sh("pip install nose")
   end
+
+  desc "Install epydocs requirements"
+  task :epydocs do
+    version = "epydoc-3.0.1"
+    url = "http://prdownloads.sourceforge.net/epydoc/#{version}.tar.gz"
+    install_tar(url, version) #unless sh("which epydoc")
+  end
 end
 
 task :setup => ["setup:install", "setup:develop"]
