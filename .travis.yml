@@ -16,7 +16,6 @@ before_install:
     - sudo apt-get build-dep python-cvxopt && sudo apt-get install python-cvxopt
     - sudo apt-get install python-qt4
     - sudo apt-get install libatlas-base-dev libatlas3gf-base
-    - sudo apt-get install python-numpy
 
 install:
     - pip install --use-mirrors -r requirements.txt
